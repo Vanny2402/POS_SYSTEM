@@ -49,7 +49,6 @@ D:\WORK\POS\POS_SYSTEM\POST\bin\Debug\es\DevExpress.Pdf.v20.1.Core.resources.dll
 D:\WORK\POS\POS_SYSTEM\POST\bin\Debug\ja\DevExpress.Pdf.v20.1.Core.resources.dll
 D:\WORK\POS\POS_SYSTEM\POST\bin\Debug\ru\DevExpress.Pdf.v20.1.Core.resources.dll
 D:\WORK\POS\POS_SYSTEM\POST\obj\Debug\POST.csproj.AssemblyReference.cache
-D:\WORK\POS\POS_SYSTEM\POST\obj\Debug\POST.Form1.resources
 D:\WORK\POS\POS_SYSTEM\POST\obj\Debug\POST.Properties.Resources.resources
 D:\WORK\POS\POS_SYSTEM\POST\obj\Debug\POST.csproj.GenerateResource.cache
 D:\WORK\POS\POS_SYSTEM\POST\obj\Debug\POST.exe.licenses
@@ -57,3 +56,5 @@ D:\WORK\POS\POS_SYSTEM\POST\obj\Debug\POST.csproj.CoreCompileInputs.cache
 D:\WORK\POS\POS_SYSTEM\POST\obj\Debug\POST.csproj.CopyComplete
 D:\WORK\POS\POS_SYSTEM\POST\obj\Debug\POST.exe
 D:\WORK\POS\POS_SYSTEM\POST\obj\Debug\POST.pdb
+D:\WORK\POS\POS_SYSTEM\POST\obj\Debug\POST.MainForm.resources
+D:\WORK\POS\POS_SYSTEM\POST\obj\Debug\POST.Security.User_form.resources

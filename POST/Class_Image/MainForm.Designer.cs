@@ -46,7 +46,7 @@ namespace POST
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbonControl1.Size = new System.Drawing.Size(940, 158);
+            this.ribbonControl1.Size = new System.Drawing.Size(1343, 158);
             // 
             // ribbonPage1
             // 
@@ -64,7 +64,7 @@ namespace POST
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(940, 574);
+            this.ClientSize = new System.Drawing.Size(1343, 727);
             this.Controls.Add(this.ribbonControl1);
             this.Name = "MainForm";
             this.Ribbon = this.ribbonControl1;
