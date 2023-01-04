@@ -7,6 +7,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace POST.Class
 {
     class ClsUser
@@ -15,6 +17,8 @@ namespace POST.Class
         public static SqlDataAdapter da;// to Connect Sqlcomman to datset
         public static DataTable dbl;
         public static string sql;
+
+
         public static void login(string  username, string password)
         {
             sql = "SELECT* FROM TBL_USER WHERE UserName =@UserName AND Password=@Password";
@@ -28,9 +32,6 @@ namespace POST.Class
             {
                 MessageBox.Show("UserName Invalid", "POS:", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-            }
-            else
-            {
             }
         }
     }

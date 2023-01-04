@@ -108,6 +108,7 @@ namespace POST.Security
             this.Name = "User_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "USER";
+            this.Load += new System.EventHandler(this.User_form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
