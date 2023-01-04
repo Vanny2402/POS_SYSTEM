@@ -25,7 +25,6 @@ namespace POST.Security
         {
             ClsDatabase.checkconnection();
             ClsUser.login(txt_username.Text.Trim(),txt_password.Text.Trim());
-            new MainForm().Show();
         }
 
         private void User_form_Load(object sender, EventArgs e)
