@@ -2,21 +2,33 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using POST.UserInterface;
 
 
 
 namespace POST.Class
 {
-    class ClsUser
+    public class ClsUser
     {
         public static SqlCommand cmd;  // static to call only on this Class 
         public static SqlDataAdapter da;// to Connect Sqlcomman to datset
         public static DataTable dbl;
         public static string sql;
+        public string UserName;
+        public string Gender;
+        public DateTime DateOfBirth;
+        public string Password;
+        public string Discription;
+        public float Salary;
+        public string Phone;
+        public int Active;
+        public int PossitionID;
+        public Image Photo;
 
 
         public static void login(string  username, string password)
@@ -37,8 +49,7 @@ namespace POST.Class
                 new MainForm().Show();
             }
         }
-
-        public static void userInsesrt(string username,string gender,DateTime dateOfbirht,string password,string description,float salary,string phone,int active,int possitionId,byte[] photo)
+        public static void userInsesrt(string username, string gender,DateTime dateOfbirht,string password,string description,float salary,string phone,int active,int possitionId,byte[] photo)
         {
             //sql = "Insert into TBL_USER VALUES(2,'abc','Female','1999-03-05','admin','Test',980,'0974005480',1,1,null);";
             using (SqlCommand cmds = new SqlCommand("Sp_insert_user", ClsDatabase.CON))
@@ -56,15 +67,22 @@ namespace POST.Class
                     cmds.Parameters.AddWithValue("@Active", active);
                     cmds.Parameters.AddWithValue("@PossitionId", possitionId);
                     cmds.Parameters.AddWithValue("@Photo", photo);
-
                     cmds.ExecuteNonQuery();
                     MessageBox.Show("After Insert:");
                 }catch(Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
-
             }
+        }
+        public static DataTable LoadDatatoGrid()                               
+        {
+            sql = "select*from TBL_USER";
+            cmd = new SqlCommand(sql, ClsDatabase.CON);
+            da = new SqlDataAdapter(cmd);
+            dbl = new DataTable();
+            da.Fill(dbl);
+            return dbl;
         }
     }
 }
